@@ -1,9 +1,9 @@
 def Biodata(tahunLahir, Namaku, Asal):
     tahun_sekarang = 2020
-    print(f'Perkenalkan Nama Saya : {Namaku}')
-    print(f'Umur Saya : {tahun_sekarang-tahunLahir}')
-    print(f'Saya Adalah Angkatan : {tahun_sekarang}')
-    print(f'Asal Saya dari : {Asal}')
+    print('Perkenalkan Nama Saya : {}' .format(Namaku))
+    print('Umur Saya : {}' .format(tahun_sekarang-tahunLahir))
+    print('Saya Adalah Angkatan : {}' .format(tahun_sekarang))
+    print('Asal Saya dari : {}' .format(Asal))
 tahunLahir = int(input())
 Namaku = input()
 Asal = input()

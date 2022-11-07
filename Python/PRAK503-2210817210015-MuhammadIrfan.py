@@ -18,4 +18,4 @@ while(batas < bilangan):
         maks = maksimal(maks, nilai)
         minim = minimal(minim, nilai)
         batas+=1
-    print('%d %d' %(maks, minim))
+    print('{} {}' .format(maks, minim))
