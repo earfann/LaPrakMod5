@@ -10,7 +10,7 @@ int MaxBilangan(int a, int b, int c, int d){
     else
     return d;
 }
-int main() {
+int main(){
     int a, b, c, d;
     scanf("%d %d %d %d", &a, &b, &c, &d);
     int hasil = MaxBilangan(a, b, c, d);

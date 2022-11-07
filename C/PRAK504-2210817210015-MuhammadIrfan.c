@@ -1,28 +1,17 @@
 #include <stdio.h>
-int reverse(int a, int reversed){
+int reverse(int reverse){
 //Lengkapi Function ini
-    while(a!=0){
-        reversed = reversed * 10;
-        reversed = reversed + a % 10;
-        a = a / 10;}
-    return reversed;}
-int reverse2(int b, int reversed){
-    while(b!=0){
-        reversed = reversed * 10;
-        reversed = reversed + b % 10;
-        b = b / 10;}
-    return reversed;}
-int reverse3(int c, int reversed){
-    while(c!=0){
-        reversed = reversed * 10;
-        reversed = reversed + c % 10;
-        c = c / 10;}
-    return reversed;}
+    int n = 0;
+    while(reverse!=0){
+        n = n * 10;
+        n = n + reverse % 10;
+        reverse /= 10;}
+    return n;}
 int main(){
-    int A, B, reversed = 0;
+    int A, B;
     scanf("%d %d", &A, &B);
-    A = reverse(A, reversed);
-    B = reverse2(B, reversed);
+    A = reverse(A);
+    B = reverse(B);
     int C = A + B;
-    printf("%d", reverse3(C, reversed));
+    printf("%d", reverse(C));
 }
